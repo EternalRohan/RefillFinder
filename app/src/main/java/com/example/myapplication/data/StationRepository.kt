@@ -6,7 +6,7 @@ class StationRepository(private val dao: StationDao) {
     val allStations: Flow<List<StationEntity>> = dao.getAllStations()
 
     suspend fun seedDatabase() {
-        // Mock Offline-first Data for University Campus
+      
         val mockData = listOf(
             StationEntity(title = "Main Block (Block 32)", description = "Ground floor, near library", latitude = 31.2560, longitude = 75.7051, hasPurifier = true, hasHotWater = false),
             StationEntity(title = "Block 33", description = "Floor 2, near stairs", latitude = 31.2565, longitude = 75.7056, hasPurifier = true, hasHotWater = true),
