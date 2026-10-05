@@ -20,8 +20,8 @@ class ChatViewModel : ViewModel() {
     private val _isLoading = MutableStateFlow(false)
     val isLoading: StateFlow<Boolean> = _isLoading.asStateFlow()
 
-    // TODO: Replace with your actual Gemini API Key
-    private val apiKey = "YOUR_GEMINI_API_KEY"
+    /
+    private val apiKey = "API_KEY"
 
     private val generativeModel = GenerativeModel(
         modelName = "gemini-1.5-flash",
@@ -46,9 +46,9 @@ class ChatViewModel : ViewModel() {
 
         viewModelScope.launch {
             try {
-                if (apiKey == "YOUR_GEMINI_API_KEY") {
+                if (apiKey == "API_KEY") {
                     _messages.value = _messages.value + ChatMessage(
-                        "⚠️ Please replace 'YOUR_GEMINI_API_KEY' with your actual Google Gemini API Key in ChatViewModel.kt to use the AI.",
+                        "⚠️ Please replace 'API_KEY' with your actual Google Gemini API Key in ChatViewModel.kt to use the AI.",
                         isUser = false
                     )
                     return@launch
