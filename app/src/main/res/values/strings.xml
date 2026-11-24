@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ReFillFinder</string>
+    <string name="login_title">Sign in to ReFillFinder</string>
+    <string name="google_sign_in">Continue with Google</string>
+    <string name="email_hint">Email address</string>
+    <string name="password_hint">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Create Account</string>
+    <string name="nearest_cooler">Nearest Cooler</string>
+    <string name="campus_map">Campus Map</string>
+    <string name="community">Community</string>
+    <string name="ai_chat">AI Assistant</string>
+    <string name="profile">Profile</string>
+    <string name="report_issue">Report Issue</string>
+    <string name="no_water">No Water</string>
+    <string name="broken">Broken / Not Working</string>
+    <string name="dirty">Unclean / Dirty</string>
+    <string name="fixed">Issue Fixed!</string>
+    <string name="other">Other</string>
+</resources>
